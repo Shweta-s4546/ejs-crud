@@ -1,5 +1,5 @@
 //import mongoose
-const mongoose =  require ('mongoose')
+const mongoose =  require('mongoose')
 
 //create a db schema ref new mongoose.schema(schema,collection)
 const userSchema = new mongoose.Schema({
@@ -34,4 +34,4 @@ const userSchema = new mongoose.Schema({
     timestamps: true // log the created and updated times in collection
 })
 
-module.exports = mongoose.model("user", userSchema) //model(export schema Name, schema ref)
+module.exports = mongoose.model("User", userSchema) //model(export schema Name, schema ref)
